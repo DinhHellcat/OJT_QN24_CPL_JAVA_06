@@ -1,0 +1,17 @@
+User: đăng kí, đăng nhập, quản lí sinh viên/giảng viên/quản trị viên
+Course: học sinh đăng kí học, giảng viên đăng kí dạy, quản trị viên quản lí thời gian course
+Bài giảng: Loại tệp (video, docx, link...), 
+Bài tập: HS CRUD bài tập, giảng viên xem, chấm, xóa, bình luận bài tập
+Thể loại course: Course
+Bình luận: HS, Giảng viên xem bài tập
+
+User: ID, RoleID, Name, Password, thông tin cá nhân
+-> Role: ID, RoleName
+Subject: ID, CategoryID, Course name
+-> Category: ID, CategoryID
+Lesson: ID, LessonName
+Exercise: ID, ExerciseName
+Comment: ID, CommentTitle, CommentContent
+*Admin role: tin tức & QnA
+News: ID, User_ID, NewsTitle, NewsContent
+QnA: ID, User_ID, QuestionTitle, QuestionContent (!)
