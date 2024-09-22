@@ -1,0 +1,19 @@
+:root
+{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+        /* box-sizing đặt là kế thừa, sau này có thể sử dụng lại thuộc tính của cha */
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 62.5%;  /* font size 62.5% -> 1 rem = 10px. Dễ quản lí */
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
