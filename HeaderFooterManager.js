@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="./assets/css/normalizer.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <div class="app">
+class SpecialHeader extends HTMLElement
+{
+    ConnectedCallBack()
+    {
+        this.innerHTML = `
         <header class="header">
             <div class="grid">
                 <nav class="nav">
@@ -30,24 +21,34 @@
                 </nav>
             </div>
         </header>
+        `;
+    }
+}
 
-        <div class="body">
-            <p>temp</p>
-        </div>
-
+class SpecialFooter extends HTMLElement
+{
+    ConnectedCallBack()
+    {
+        this.innerHTML = `
         <footer class="footer">
             <div class="grid">
                 <ul class="footer__info">
                     <li class="footer__items">Dự án OJT - Fall2024</li>
                     <li class="footer__items">
                         <i class="fa-brands fa-github"></i>
-                        <a href="https://github.com" class="footer__a footer__items">Github</a>
+                        <a href="https://github.com">Github: </a>
                     </li>
                     <li class="footer__items">© Powered by group 3 QN24_CPL_JAVA_06</li>
                 </ul>
             </div>
         </footer>
-    </div>
-</body>
+        `;
+    }
+}
 
-</html>
+customElements.define('special-header', SpecialHeader);
+customElements.define('special-footer', SpecialFooter);
+
+// không dùng trên liveserver được
+// bảo mật kém
+// nói chung là tệ, xem cho biết
