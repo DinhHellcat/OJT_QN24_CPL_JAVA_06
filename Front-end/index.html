@@ -32,7 +32,80 @@
         </header>
 
         <div class="body">
-            <p>temp</p>
+            <section class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by name, username, class..." />
+                <select id="searchOption">
+                    <option value="all">All</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="student">Student</option>
+                </select>
+                <button onclick="performSearch()">Search</button>
+            </section>
+        
+            <section class="cards-container" id="cardsContainer">
+                <div class="card">
+                    <h3>Vu Nguyen Tuan</h3>
+                    <p><strong>Role:</strong> Teacher</p>
+                    <p><strong>Username:</strong> VuNT13</p>
+                    <p><strong>Email:</strong> vunt13@fpt.com</p>
+                    <p><strong>Phone:</strong> 123-456-7890</p>
+                </div>
+                <div class="card">
+                    <h3>Đinh Sĩ Hiệp</h3>
+                    <p><strong>Role:</strong> Student</p>
+                    <p><strong>Username:</strong> Hellcat</p>
+                    <p><strong>Email:</strong> HellcatDinh@gmail.com</p>
+                    <p><strong>Phone:</strong> 123-456-7890</p>
+                </div>
+                <div class="card">
+                    <h3>Phan Phương Sinh</h3>
+                    <p><strong>Role:</strong> Student</p>
+                    <p><strong>Username:</strong> SinhPP</p>
+                    <p><strong>Email:</strong> PPSinh@example.com</p>
+                    <p><strong>Phone:</strong> 123-456-7890</p>
+                </div>
+                <div class="card">
+                    <h3>Lý Mạnh Cường</h3>
+                    <p><strong>Role:</strong> Student</p>
+                    <p><strong>Username:</strong> CuongLM</p>
+                    <p><strong>Email:</strong> LMCuong@example.com</p>
+                    <p><strong>Phone:</strong> 123-456-7890</p>
+                </div>
+                <div class="card">
+                    <h3>Phạm Nhật Nam</h3>
+                    <p><strong>Role:</strong> Student</p>
+                    <p><strong>Username:</strong> NamPN</p>
+                    <p><strong>Email:</strong> NamNP@example.com</p>
+                    <p><strong>Phone:</strong> 123-456-7890</p>
+                </div>
+                <div class="card">
+                    <h3>temp</h3>
+                    <p><strong>Role:</strong> Student</p>
+                    <p><strong>Username:</strong> temp</p>
+                    <p><strong>Email:</strong> temp@example.com</p>
+                    <p><strong>Phone:</strong> 123-456-7890</p>
+                </div>
+                <div class="card">
+                    <h3>temp</h3>
+                    <p><strong>Role:</strong> Student</p>
+                    <p><strong>Username:</strong> temp</p>
+                    <p><strong>Email:</strong> temp@example.com</p>
+                    <p><strong>Phone:</strong> 123-456-7890</p>
+                </div>
+                <div class="card">
+                    <h3>temp</h3>
+                    <p><strong>Role:</strong> Student</p>
+                    <p><strong>Username:</strong> temp</p>
+                    <p><strong>Email:</strong> temp@example.com</p>
+                    <p><strong>Phone:</strong> 123-456-7890</p>
+                </div>
+            </section>
+        
+            <section class="pagination" id="pagination">
+                <span onclick="changePage(1)">1</span>
+                <!-- <span onclick="changePage(2)">2</span>
+                <span onclick="changePage(3)">3</span> -->
+            </section>
         </div>
 
         <footer class="footer">
@@ -49,5 +122,19 @@
         </footer>
     </div>
 </body>
+
+<script>
+
+    function performSearch() {
+        const searchQuery = document.getElementById('searchInput').value;
+        const searchOption = document.getElementById('searchOption').value;
+
+        alert('Search for: ' + searchQuery + ' (Filter: ' + searchOption + ')');
+    }
+
+    function changePage(pageNumber) {
+        alert('Changing to page: ' + pageNumber);
+    }
+</script>
 
 </html>
