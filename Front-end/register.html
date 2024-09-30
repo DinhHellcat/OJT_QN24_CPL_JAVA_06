@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/css/normalizer.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="nav">
+                    <ul class="header__list">
+                        <li class="header__item"><i class="fa-solid fa-graduation-cap"></i></li>
+                        <li class="header__item">E-Learning project</li>
+                    </ul>
+
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__item header__item--link">News</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="body">
+                <div>
+                    <a href="dashboard.html" class="auth-form__switch">dashboard</a>
+                </div>
+
+            <div class="authen-container">
+                <div class="authen-form">
+                    <div class="auth-form__item authen-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <a href="login.html" class="auth-form__switch">Đăng nhập</a>
+                    </div>
+
+                    <div class="auth-form__item auth-form__form--input">
+                        <input type="text" class="auth-form__input" placeholder="Your email">
+                    </div>
+                    <div class="auth-form__item auth-form__form--input">
+                        <input type="password" class="auth-form__input" placeholder="Your password">
+                    </div>
+                    <div class="auth-form__item auth-form__form--input">
+                        <input type="password" class="auth-form__input" placeholder="Re-enter your password">
+                    </div>
+
+                    <div class="auth-form__item auth-form__controls">
+                        <button class="btn btn--primary">Đăng ký</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+            <footer class="footer">
+            <div class="grid">
+                <ul class="footer__info">
+                    <li class="footer__items">Dự án OJT - Fall2024</li>
+                    <li class="footer__items">
+                        <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com" class="footer__a footer__items">Github</a>
+                    </li>
+                    <li class="footer__items">© Powered by group 3 QN24_CPL_JAVA_06</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script>
+
+    function performSearch() {
+        const searchQuery = document.getElementById('searchInput').value;
+        const searchOption = document.getElementById('searchOption').value;
+
+        alert('Search for: ' + searchQuery + ' (Filter: ' + searchOption + ')');
+    }
+
+    function changePage(pageNumber) {
+        alert('Changing to page: ' + pageNumber);
+    }
+</script>
+
+</html>
